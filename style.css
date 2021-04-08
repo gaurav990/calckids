@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Luckiest Guy', cursive;
+  background-color: #E6E6EA;
+}
+
+.container{
+  width: 95%;
+  margin: auto;
+}
+
+header{
+  background: #FE4A49;
+}
+
+.nav{
+  overflow: hidden;
+  background:#FE4A49;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.nav h2{
+  font-size: 2rem;
+  float: left;
+}
+
+nav{
+  float: right;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  font-size: 1.3rem;
+  margin-top: 5px;
+  float: left;
+  padding: 0 15px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.current a::after{
+  content: '-';
+  font-size: 4px;
+  background-color: white;
+  display: block;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 100%;
+  
+}
+
+.wap{
+	
+	 display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.equation{
+  display: flex;
+  height:300px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+  font-size: 5.2vw;
+  background: #fff;
+  border-radius: 3px;
+  text-align: center;
+  margin: 10px 10px 0px 10px;
+}
+
+.equation h1{
+  display: inline;
+  padding: 20px;
+}
+
+.answer-options{
+  font-size: 5.2vw;
+  margin-right: 10px;
+}
+
+
+@media(max-width:768px){
+  .nav h2{
+    font-size: 1.5rem;
+    float: none;
+    text-align: center;
+  }
+
+  nav{
+	   
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li{
+    font-size: 0.5rem;
+  }
+}
+
+@media(max-width:480px){
+  .nav h2{
+    float: none;
+    text-align: center;
+  }
+
+  .equation h1{
+    display: inline;
+    padding: 10px;
+  } 
+
+  nav li{
+    font-size: .8rem;
+  }
+
+}
+
+   #option1 {
+                float:left; 
+               
+                width:33%;
+                height:210px;
+				cursor: pointer;
+				border-radius: 3px;
+				text-align: center;
+				margin-top: 10px;
+				background-color: #2AB7CA;
+				color: #fff;
+				transition: 1s;
+				box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+            }
+			
+			#option1:hover{
+			  color: #FE4A49;
+			  background: #fff;
+			}
+
+			
+            #option2{
+                float:left;
+				margin-left:0.4rem;
+             
+                width:33%;
+                height:210px;
+				cursor: pointer;
+				border-radius: 3px;
+				text-align: center;
+				margin-top: 10px;
+				background-color: #32CD32;
+				color: #fff;
+				transition: 1s;
+				box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+            }
+			
+			#option2:hover{
+			  color: #2AB7CA;
+			  background: white;
+			}
+			
+			
+            #option3{
+                float:right;
+              
+                width:33%;
+                height:210px;
+				cursor: pointer;
+				border-radius: 3px;
+				text-align: center;
+				margin-top: 10px;
+				background-color: #FED766;
+				color: white;
+				transition: 1s;
+				box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+            }
+			
+			#option3:hover{
+				  color: #FED766;
+				  background: white;
+				}
+
+
+
+
